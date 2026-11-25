@@ -1,0 +1,57 @@
+using System;
+using System.Collections;
+using UnityEngine;
+public class PlayerHealth : MonoBehaviour, IDamageable
+{
+    [Header("Health Config")]
+    [SerializeField] private float maxHealth = 5f;
+    [SerializeField] private float invincibilityDuration = 0.5f;
+    public float CurrentHealth { get; private set; }
+    public float MaxHealth => maxHealth;
+    public bool IsInvulnerable { get; private set; }
+    #region Events
+    public event Action OnDeath;
+    // Eventos para el efecto visual de invulnerabilidad
+    public event Action<float> OnInvincibilityStarted; // Envia la duracion
+    public event Action OnInvincibilityEnded;
+    #endregion
+    private void Awake()
+    {
+        if (ExtraHeartItem.Consume()) maxHealth += 1;
+        CurrentHealth = maxHealth;
+    }
+    private void Start()
+    {
+        EventManager.TriggerEvent(EventType.PlayerHealthChanged, CurrentHealth, maxHealth);
+    }
+    public void TakeDamage(float amount, string attackerName = "Unknown")
+    {
+        if (IsInvulnerable || CurrentHealth <= 0f) return;
+        CurrentHealth = Mathf.Max(CurrentHealth - amount, 0f);
+        EventManager.TriggerEvent(EventType.PlayerHealthChanged, CurrentHealth, maxHealth);
+        EventManager.TriggerEvent(EventType.PlayerDamaged);
+        if (CurrentHealth <= 0f)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(InvincibilityRoutine());
+        }
+    }
+    private IEnumerator InvincibilityRoutine()
+    {
+        IsInvulnerable = true;
+        OnInvincibilityStarted?.Invoke(invincibilityDuration); 
+
+        yield return new WaitForSeconds(invincibilityDuration);
+
+        IsInvulnerable = false;
+        OnInvincibilityEnded?.Invoke(); 
+    }
+    private void Die()
+    {
+        OnDeath?.Invoke();
+        EventManager.TriggerEvent(EventType.GameOver);
+    }
+}
