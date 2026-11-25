@@ -12,34 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"13687639-7766-4789-bf32-2133fcd3e559\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"013feb68-3fed-451f-90f4-794bd4ef2a66\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"adCompletedReward\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 3\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"a146ae55-7755-4ce0-9218-c6fa08687395\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"16e9f04a-4b43-4a4b-845e-7f1df36a6166\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"adSkippedReward\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"54b812f3-56cf-4af7-bdbc-3a4700cdf9f9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"77b65039-2485-410e-9c4b-8f8c37700b83\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"coinsPerWin\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"c2982d0a-5842-4a5a-ae63-75cbb3b0b438\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2808fb85-4a81-4fd4-9ec9-4f08064125d6\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"refundStaminaOnWin\",\r\n      \"type\":
     \"bool\",\r\n      \"value\": true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"b0dc89c2-964c-47d0-bcbe-b157a6cd5344\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"6d7c799e-1347-45ed-8a7e-0a9780153230\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"secondsToRecover\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 300.0\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"13687639-7766-4789-bf32-2133fcd3e559\"\r\n   
+    \"value\": 10.0\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"013feb68-3fed-451f-90f4-794bd4ef2a66\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"adCompletedReward\",\r\n      \"type\":
     \"int\",\r\n      \"value\": 3\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"a146ae55-7755-4ce0-9218-c6fa08687395\"\r\n    },\r\n    \"rs\":
+    \"entityId\": \"16e9f04a-4b43-4a4b-845e-7f1df36a6166\"\r\n    },\r\n    \"rs\":
     {\r\n      \"key\": \"adSkippedReward\",\r\n      \"type\": \"int\",\r\n     
     \"value\": 1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"54b812f3-56cf-4af7-bdbc-3a4700cdf9f9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"77b65039-2485-410e-9c4b-8f8c37700b83\"\r\n    },\r\n    \"rs\": {\r\n     
     \"key\": \"coinsPerWin\",\r\n      \"type\": \"int\",\r\n      \"value\": 100\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"c2982d0a-5842-4a5a-ae63-75cbb3b0b438\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"2808fb85-4a81-4fd4-9ec9-4f08064125d6\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"refundStaminaOnWin\",\r\n      \"type\":
     \"bool\",\r\n      \"value\": true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"b0dc89c2-964c-47d0-bcbe-b157a6cd5344\"\r\n    },\r\n   
+    {\r\n      \"entityId\": \"6d7c799e-1347-45ed-8a7e-0a9780153230\"\r\n    },\r\n   
     \"rs\": {\r\n      \"key\": \"secondsToRecover\",\r\n      \"type\": \"float\",\r\n     
-    \"value\": 300.0\r\n    }\r\n  }\r\n]"
+    \"value\": 10.0\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"b5d23572-6773-48b6-8fb1-4ccc3dd68768\",\r\n   
     \"name\": \"production\",\r\n    \"id\": \"193ba203-aaeb-4d02-96a4-eb72a169af5e\",\r\n   
     \"isDefault\": true,\r\n    \"createdAt\": \"2026-10-01T22:36:28Z\",\r\n    \"updatedAt\":
